@@ -8,6 +8,9 @@ module.exports = eleventyConfig => {
 
   // Copy `assets/` to `_site/assets`
   eleventyConfig.addPassthroughCopy("assets");
+
+  // Copy the CNAME file that lets the custom domain talk to GH Pages
+  eleventyConfig.addPassthroughCopy("CNAME");
   
   // set default language to Spanish 
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
