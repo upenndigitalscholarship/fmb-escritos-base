@@ -2,7 +2,6 @@ const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const { execSync } = require('child_process')
 const markdownIt = require('markdown-it');
 const markdownItFootnote = require('markdown-it-footnote');
-const bootstrap = require('bootstrap')
 
 module.exports = eleventyConfig => {
 
